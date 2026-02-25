@@ -53,19 +53,8 @@ return {
     "folke/which-key.nvim",
     opts = {
 
-      preset = "modern",
+      preset = "clasic", -- modern or helix available too
       delay = 1000,
-    },
-  },
-
-  {
-    "folke/snacks.nvim",
-    opts = {
-      explorer = {
-        enabled = true,
-        auto_open = false,
-        replace_netrw = false,
-      },
     },
   },
 
