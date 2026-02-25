@@ -13,4 +13,4 @@ vim.keymap.set("n", "<C-M-l>", ":vertical resize +2<CR>", { desc = "Resize windo
 vim.keymap.set("n", "<C-M-k>", ":resize -2<CR>", { desc = "Resize window up (-2)" })
 vim.keymap.set("n", "<C-M-j>", ":resize +2<CR>", { desc = "Resize window down (+2)" })
 
-vim.keymap.set("n", "<leader>\\", ":Ex<CR>", { desc = "Open netrw (Ex)" })
+vim.keymap.set("n", "\\", ":Ex<CR>", { desc = "Open netrw (Ex)" })

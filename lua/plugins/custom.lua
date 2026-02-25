@@ -1,4 +1,5 @@
 return {
+
   { "Mofiqul/vscode.nvim" },
 
   {
@@ -64,6 +65,20 @@ return {
         enabled = true,
         auto_open = false,
         replace_netrw = false,
+      },
+    },
+  },
+
+  {
+    "saghen/blink.cmp",
+    opts = {
+      completion = {
+        menu = {
+          auto_show = false,
+        },
+        ghost_text = {
+          enabled = false,
+        },
       },
     },
   },
