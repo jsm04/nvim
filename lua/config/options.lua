@@ -23,7 +23,7 @@ vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro"
 vim.g.netrw_sort_by = "name"
 vim.g.netrw_show_hidden = 1
 vim.g.netrw_banner = 1
-vim.g.netrw_liststyle = 1
+vim.g.netrw_liststyle = 3
 
 -- Indentation characters
 vim.opt.list = false

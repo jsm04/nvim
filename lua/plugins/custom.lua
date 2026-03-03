@@ -10,6 +10,10 @@ return {
   },
 
   {
+    "tjdevries/colorbuddy.nvim",
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -70,5 +74,43 @@ return {
         },
       },
     },
+  },
+
+  {
+    "folke/snacks.nvim",
+    opts = {
+      explorer = { enabled = false },
+    },
+    keys = {
+      { "<leader>fe", false },
+      { "<leader>fE", false },
+      { "<leader>E", false },
+      { "<leader>e", false },
+    },
+  },
+
+  { "nvim-mini/mini.icons", enabled = false },
+
+  {
+    "adelarsq/vim-emoji-icon-theme",
+    dependencies = { "kyazdani42/nvim-web-devicons" },
+  },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      opts.options.icons_enabled = false
+
+      -- Optional: ensure no symbol sections inject icons
+      opts.sections = {
+        lualine_a = { "mode" },
+        lualine_b = { "branch" },
+        lualine_c = { "filename" },
+        lualine_x = { "encoding", "fileformat", "filetype" },
+        lualine_y = { "progress" },
+        lualine_z = { "location" },
+      }
+
+      return opts
+    end,
   },
 }
